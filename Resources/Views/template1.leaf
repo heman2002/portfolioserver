@@ -5,7 +5,10 @@
     <title>Hello, World!</title>
   </head>
   <body>
-    <h1>Hello, #(name)!</h1>
+    <h1>Hello, #(firstname) #(lastname)!</h1><br />
+    <h1>#(emailid)</h1><br />
+    <h1>#(phoneno)</h1><br />
+    <h1>#(address)</h1><br />
   </body>
 
 </html>
