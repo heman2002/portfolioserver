@@ -51,7 +51,7 @@ drop.post("entry") { request in
 }
 
 drop.post("education") { request in
-  guard let cousename = request.data["coursename"]?.string else {
+  guard let coursename = request.data["coursename"]?.string else {
     throw Abort.badRequest
   }
   guard let institute = request.data["institute"]?.string else {
