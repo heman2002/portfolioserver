@@ -8,8 +8,8 @@ drop.get { req in
     ])
 }
 
-drop.get("template2", String.self) { request, name in
-  return try drop.view.make("template1", Node(node: ["name": name]))
+drop.get("entry") { request in
+  return try drop.view.make("entry")
 }
 
 drop.post("template2") { request in

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hello, World!</title>
+</head>
+<body>
+  <div>
+    <div>
+      <div class="layout-padding">
+        <strong>Job Title:</strong> <input v-model="jobtitle" placeholder="Job title">
+        <br>
+        <strong>Company:</strong> <input v-model="company" placeholder="Company">
+        <br />
+        <strong>Start Date:</strong> <input v-model="startdate" placeholder="Start date">
+        <br />
+        <strong>End date:</strong> <input v-model="enddate" placeholder="End date">
+        <br />
+        <form action="#/showcase/workexperience">
+          <input type="submit" value="Add new entry"/>
+        </form>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div slot="footer" class="toolbar">
+      <div class="auto flex justify-center within-iframe-hide">
+        <button v-go-back="'/showcase'">
+          <i class="on-left animate-blink">
+            replay
+          </i>
+          Back to Showcase
+        </button>
+      </div>
+      <q-toolbar-title :padding="0" class="within-iframe-only">
+        Footer
+      </q-toolbar-title>
+    </div>
+  </div>
+</body>
+</html>
