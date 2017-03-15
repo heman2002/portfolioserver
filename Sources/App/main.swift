@@ -69,6 +69,13 @@ drop.post("education") { request in
                                               ,"enddate": enddate]))
 }
 
+drop.post("skills") { request in
+  guard let skill = request.data["skill"]?.string else {
+    throw Abort.badRequest
+  }
+  return skill
+}
+
 drop.resource("posts", PostController())
 
 drop.run()
