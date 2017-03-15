@@ -50,6 +50,25 @@ drop.post("entry") { request in
                                               ,"enddate": enddate]))
 }
 
+drop.post("education") { request in
+  guard let cousename = request.data["coursename"]?.string else {
+    throw Abort.badRequest
+  }
+  guard let institute = request.data["institute"]?.string else {
+    throw Abort.badRequest
+  }
+  guard let startdate = request.data["startdate"]?.string else {
+    throw Abort.badRequest
+  }
+  guard let enddate = request.data["enddate"]?.string else {
+    throw Abort.badRequest
+  }
+  return try drop.view.make("education", Node(node: ["coursename": coursename
+                                              ,"institute": institute
+                                              ,"startdate": startdate
+                                              ,"enddate": enddate]))
+}
+
 drop.resource("posts", PostController())
 
 drop.run()
