@@ -8,10 +8,6 @@ drop.get { req in
     ])
 }
 
-drop.get("entry") { request in
-  return try drop.view.make("entry")
-}
-
 drop.post("template2") { request in
   guard let firstname = request.data["firstname"]?.string else {
     throw Abort.badRequest
@@ -33,6 +29,25 @@ drop.post("template2") { request in
                                               ,"emailid": emailid
                                               ,"phoneno": phoneno
                                               ,"address": address ]))
+}
+
+drop.post("template2") { request in
+  guard let jobtitle = request.data["jobtitle"]?.string else {
+    throw Abort.badRequest
+  }
+  guard let company = request.data["company"]?.string else {
+    throw Abort.badRequest
+  }
+  guard let startdate = request.data["startdate"]?.string else {
+    throw Abort.badRequest
+  }
+  guard let enddate = request.data["enddate"]?.string else {
+    throw Abort.badRequest
+  }
+  return try drop.view.make("entry", Node(node: ["jobtitle": jobtitle
+                                              ,"company": company
+                                              ,"startdate": startdate
+                                              ,"enddate": enddate]))
 }
 
 drop.resource("posts", PostController())
