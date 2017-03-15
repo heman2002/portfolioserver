@@ -16,38 +16,10 @@
         <br />
         <strong>End date:</strong> <input v-model="enddate" placeholder="End date">
         <br />
-        <form action="#/showcase/workexperience">
+        <form>
           <input type="submit" value="Add new entry"/>
         </form>
       </div>
-    </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <div slot="footer" class="toolbar">
-      <div class="auto flex justify-center within-iframe-hide">
-        <button v-go-back="'/showcase'">
-          <i class="on-left animate-blink">
-            replay
-          </i>
-          Back to Showcase
-        </button>
-      </div>
-      <q-toolbar-title :padding="0" class="within-iframe-only">
-        Footer
-      </q-toolbar-title>
     </div>
   </div>
 </body>
