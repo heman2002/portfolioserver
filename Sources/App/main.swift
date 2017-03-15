@@ -31,7 +31,7 @@ drop.post("template2") { request in
                                               ,"address": address ]))
 }
 
-drop.post("template2") { request in
+drop.post("entry") { request in
   guard let jobtitle = request.data["jobtitle"]?.string else {
     throw Abort.badRequest
   }
