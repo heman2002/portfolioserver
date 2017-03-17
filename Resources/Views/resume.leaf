@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Hello, World!</title>
+  </head>
+  <body>
+    <h7>Name: #(firstname) #(lastname)</h7><br />
+    <h7>EmailID: #(emailid)</h7><br />
+    <h7>PhoneNo: #(phoneno)</h7><br />
+    <h7>Address: #(address)</h7><br />
+    <h7>Job Title: #(jobtitle)</h7>
+    <h7>Company: #(company)</h7>
+    <h7>Start Date: #(sdate)</h7>
+    <h7>End Date: #(edate)</h7>
+    <h7>Course: #(course)</h7>
+    <h7>Institute: #(institute)</h7>
+    <h7>Start Date: #(startdate)</h7>
+    <h7>End Date: #(enddate)</h7>
+    <h7>Skills: #(skill)</h7>
+  </body>
+</html>
