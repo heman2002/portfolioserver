@@ -17,6 +17,6 @@
     <h7>Institute: #(institute)</h7><br />
     <h7>Start Date: #(startdate)</h7><br />
     <h7>End Date: #(enddate)</h7><br />
-    <h7>Skills: #(skill)</h7><br />
+    <h7>Skills: </h7>#(skill)<br />
   </body>
 </html>
